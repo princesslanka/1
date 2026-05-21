@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princess Lanka | Cleaning & Hospitality Services Qatar</title>
+    <meta name="description" content="Princess Lanka Cleaning & Hospitality Services offers premium residential, commercial, deep cleaning, janitorial, and hospitality staffing services in Doha, Qatar.">
+    
+    <!-- Google Fonts: Playfair Display for headings & Montserrat for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. LOADING SCREEN -->
+    <div id="preloader" class="preloader-overlay">
+        <div class="loader-content">
+            <div class="loader-logo"><img src="logo.jpg" alt="Princess Lanka Logo"></div>
+            <div class="loader-brand">PRINCESS LANKA</div>
+            <div class="loader-bar-bg">
+                <div id="loader-progress" class="loader-bar-fill"></div>
+            </div>
+            <div class="loader-text">Loading Excellence... <span id="loader-percentage">0%</span></div>
+        </div>
+    </div>
+
+    <!-- BACKGROUND PARTICLE CANVAS -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- 2. STICKY NAVIGATION BAR -->
+    <header id="navbar" class="main-header">
+        <div class="nav-container">
+            <a href="#home" class="logo-link">
+                <img src="logo.jpg" alt="Princess Lanka Logo" class="logo-img">
+                <span class="logo-title">PRINCESS LANKA</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="hamburger-menu" id="hamburger-btn" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 3. HERO SECTION -->
+    <section id="home" class="hero-section">
+        <!-- Hero Slideshow Background -->
+        <div class="hero-slideshow">
+            <div class="slide active" style="background-image: linear-gradient(rgba(3, 7, 18, 0.65), rgba(3, 7, 18, 0.85)), url('https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=1920&q=80');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(3, 7, 18, 0.65), rgba(3, 7, 18, 0.85)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=80');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(3, 7, 18, 0.65), rgba(3, 7, 18, 0.85)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(3, 7, 18, 0.65), rgba(3, 7, 18, 0.85)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');"></div>
+        </div>
+        
+        <div class="hero-content">
+            <span class="hero-tagline scroll-reveal">Elite Cleaning & Hospitality Services in Qatar</span>
+            <h1 class="hero-title scroll-reveal">Princess Lanka <br><span class="highlight-gold">Cleaning & Hospitality</span></h1>
+            
+            <div class="typewriter-container scroll-reveal">
+                <span class="typewriter-prefix">We Deliver: </span>
+                <span id="typewriter-text" class="typewriter-text"></span><span class="cursor">|</span>
+            </div>
+            
+            <div class="hero-cta scroll-reveal">
+                <a href="#contact" class="btn btn-gold">Contact Us <i class="fa-solid fa-paper-plane"></i></a>
+                <a href="https://wa.me/97470681469" target="_blank" rel="noopener noreferrer" class="btn btn-green">WhatsApp Now <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        
+        <!-- Slideshow Dot Navigation -->
+        <div class="slideshow-dots" id="slideshow-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+        </div>
+    </section>
+
+    <!-- 4. ABOUT SECTION -->
+    <section id="about" class="about-section padding-y">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="subtitle">Who We Are</span>
+                <h2 class="section-title">Serving Qatar with Distinction</h2>
+                <div class="gold-divider"></div>
+            </div>
+            
+            <div class="about-grid">
+                <!-- Text Content -->
+                <div class="about-text-content scroll-reveal">
+                    <p class="lead-text">Based in the heart of Doha, Qatar, <strong>Princess Lanka Cleaning & Hospitality Services</strong> has established itself as an elite provider of professional cleaning, sanitization, and hospitality solutions.</p>
+                    <p class="body-text">We bridge the gap between world-class Sri Lankan hospitality standards, professional diligence, and the dynamic cleaning requirements of Qatar's modern corporate towers and luxury residences. Our crew is meticulously trained in advanced cleaning techniques, eco-friendly chemical management, and high-end hospitality services.</p>
+                    <p class="body-text">Through a rigorous standard of team selection, background verification, premium training, and absolute customer-centric commitment, we ensure that your environment is not just clean, but pristine, glowing with the signature luxury of the Princess Lanka brand.</p>
+                    
+                    <!-- Counters Grid -->
+                    <div class="counters-grid" id="counters-section">
+                        <div class="counter-card glass-card">
+                            <div class="counter-number highlight-gold" data-target="500">0</div>
+                            <div class="counter-label">Satisfied Clients</div>
+                        </div>
+                        <div class="counter-card glass-card">
+                            <div class="counter-number highlight-gold" data-target="850">0</div>
+                            <div class="counter-label">Projects Completed</div>
+                        </div>
+                        <div class="counter-card glass-card">
+                            <div class="counter-number highlight-gold" data-target="10">0</div>
+                            <div class="counter-label">Years Experience</div>
+                        </div>
+                        <div class="counter-card glass-card">
+                            <div class="counter-number highlight-gold" data-target="50">0</div>
+                            <div class="counter-label">Team Members</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Overlapping Image Panel -->
+                <div class="about-images-container scroll-reveal">
+                    <div class="image-frame-under">
+                        <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=800&q=80" alt="Princess Lanka Cleaning Team Operations in Qatar">
+                    </div>
+                    <div class="image-frame-over">
+                        <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Luxury Housekeeping Service in Qatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SERVICES SECTION -->
+    <section id="services" class="services-section padding-y">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="subtitle">Our Expertise</span>
+                <h2 class="section-title">Premium Luxury Solutions</h2>
+                <div class="gold-divider"></div>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Card 1: Commercial Office Cleaning -->
+                <div class="service-card glass-card scroll-reveal">
+                    <div class="card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-building-user"></i>
+                    </div>
+                    <h3 class="service-card-title">Commercial Office Cleaning</h3>
+                    <p class="service-card-desc">Routine janitorial services, office desk disinfection, common area maintenance, and floor care tailored for high-end corporate towers and business hubs.</p>
+                </div>
+                
+                <!-- Card 2: Residential Housekeeping -->
+                <div class="service-card glass-card scroll-reveal">
+                    <div class="card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-house-chimney-window"></i>
+                    </div>
+                    <h3 class="service-card-title">Residential Housekeeping</h3>
+                    <p class="service-card-desc">Bespoke luxury maid and cleaning services for apartments, villas, and residential estates, providing top-tier cleanliness with professional discretion.</p>
+                </div>
+                
+                <!-- Card 3: Deep Cleaning & Sanitization -->
+                <div class="service-card glass-card scroll-reveal">
+                    <div class="card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-spray-can-sparkles"></i>
+                    </div>
+                    <h3 class="service-card-title">Deep Cleaning & Sanitization</h3>
+                    <p class="service-card-desc">Intensive sanitization, detailed kitchen degreasing, steam-assisted restroom disinfection, and specialized allergen-elimination treatments.</p>
+                </div>
+                
+                <!-- Card 4: Post-Construction Cleanup -->
+                <div class="service-card glass-card scroll-reveal">
+                    <div class="card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                    </div>
+                    <h3 class="service-card-title">Post-Construction Cleanup</h3>
+                    <p class="service-card-desc">Comprehensive dust extraction, scrubbing windows inside-out, and removing paint, adhesive, and plaster remnants to make new properties move-in ready.</p>
+                </div>
+                
+                <!-- Card 5: Hospitality Housekeeping Staff -->
+                <div class="service-card glass-card scroll-reveal">
+                    <div class="card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                    </div>
+                    <h3 class="service-card-title">Hospitality Housekeeping</h3>
+                    <p class="service-card-desc">Deploying elite, highly trained room attendants, public area cleaners, lobby stewards, and kitchen helpers to five-star hotels and luxury resorts.</p>
+                </div>
+                
+                <!-- Card 6: Carpet, Upholstery & Glass Cleaning -->
+                <div class="service-card glass-card scroll-reveal">
+                    <div class="card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-soap"></i>
+                    </div>
+                    <h3 class="service-card-title">Carpet & Window Care</h3>
+                    <p class="service-card-desc">State-of-the-art carpet shampooing, luxury sofa steam-cleaning, upholstery restoration, and streak-free exterior high-rise window scrubbing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. GALLERY SECTION -->
+    <section id="gallery" class="gallery-section padding-y">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="subtitle">Visual Showcase</span>
+                <h2 class="section-title">Our Portfolio in Action</h2>
+                <div class="gold-divider"></div>
+            </div>
+            
+            <div class="gallery-masonry scroll-reveal">
+                <!-- Grid items (8 images) -->
+                <div class="gallery-item" data-index="0" data-src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="Luxury Room Sanitization">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Luxury Room Sanitization</span>
+                        <span class="gallery-category">Deep Cleaning</span>
+                        <i class="fa-solid fa-magnifying-glass-plus gallery-icon"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-index="1" data-src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=800&q=80" alt="Corporate Office Upkeep">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Corporate Office Upkeep</span>
+                        <span class="gallery-category">Commercial Cleaning</span>
+                        <i class="fa-solid fa-magnifying-glass-plus gallery-icon"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-index="2" data-src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=800&q=80" alt="Elite Cleaning Team">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Elite Cleaning Team</span>
+                        <span class="gallery-category">Our Staff</span>
+                        <i class="fa-solid fa-magnifying-glass-plus gallery-icon"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-index="3" data-src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Detail Housekeeping">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Detail Housekeeping</span>
+                        <span class="gallery-category">Residential Services</span>
+                        <i class="fa-solid fa-magnifying-glass-plus gallery-icon"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-index="4" data-src="https://images.unsplash.com/photo-1603712726208-df1d4b2f40a9?auto=format&fit=crop&w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1603712726208-df1d4b2f40a9?auto=format&fit=crop&w=800&q=80" alt="Sofa Steam Treatment">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Sofa Steam Treatment</span>
+                        <span class="gallery-category">Upholstery Cleaning</span>
+                        <i class="fa-solid fa-magnifying-glass-plus gallery-icon"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-index="5" data-src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Post-Build Dusting">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Post-Build Dusting</span>
+                        <span class="gallery-category">Post-Construction</span>
+                        <i class="fa-solid fa-magnifying-glass-plus gallery-icon"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-index="6" data-src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80" alt="Five-Star Attendant Services">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Five-Star Attendant Services</span>
+                        <span class="gallery-category">Hospitality Staff</span>
+                        <i class="fa-solid fa-magnifying-glass-plus gallery-icon"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-index="7" data-src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=800&q=80" alt="Streak-Free Window Care">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Streak-Free Window Care</span>
+                        <span class="gallery-category">Glass Cleaning</span>
+                        <i class="fa-solid fa-magnifying-glass-plus gallery-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX PREVIEW MODAL -->
+    <div id="lightbox" class="lightbox-modal">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="lightbox-content-wrapper">
+            <img class="lightbox-img" id="lightbox-img" src="" alt="Preview">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+        <button class="lightbox-next" id="lightbox-next" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!-- 7. CONTACT SECTION -->
+    <section id="contact" class="contact-section padding-y">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="subtitle">Connect With Us</span>
+                <h2 class="section-title">Schedule A Partnership Consultation</h2>
+                <div class="gold-divider"></div>
+            </div>
+            
+            <div class="contact-layout">
+                <!-- Form & Info Column -->
+                <div class="contact-forms-container">
+                    <!-- Info Cards Row -->
+                    <div class="contact-info-grid scroll-reveal">
+                        <div class="info-card glass-card">
+                            <i class="fa-solid fa-map-location-dot info-icon"></i>
+                            <h4 class="info-title">Headquarters</h4>
+                            <p class="info-text">Doha, State of Qatar</p>
+                        </div>
+                        <a href="tel:+97470681469" class="info-card glass-card hover-card">
+                            <i class="fa-solid fa-phone-volume info-icon"></i>
+                            <h4 class="info-title">Phone / WhatsApp</h4>
+                            <p class="info-text">+974 70681469</p>
+                        </a>
+                        <a href="mailto:princesslanka9@gmail.com" class="info-card glass-card hover-card">
+                            <i class="fa-solid fa-envelope-open-text info-icon"></i>
+                            <h4 class="info-title">Email Us</h4>
+                            <p class="info-text">princesslanka9@gmail.com</p>
+                        </a>
+                    </div>
+                    
+                    <!-- Contact Form Card -->
+                    <div class="form-wrapper glass-card scroll-reveal">
+                        <form id="contact-form" class="floating-label-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="form-name" required placeholder=" ">
+                                    <label for="form-name">Full Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="form-email" required placeholder=" ">
+                                    <label for="form-email">Email Address</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="tel" id="form-phone" required placeholder=" ">
+                                    <label for="form-phone">Phone Number</label>
+                                </div>
+                                <div class="form-group select-group">
+                                    <select id="form-service" required>
+                                        <option value="" disabled selected hidden></option>
+                                        <option value="Commercial">Commercial Office Cleaning</option>
+                                        <option value="Residential">Residential Housekeeping</option>
+                                        <option value="Deep">Deep Cleaning & Sanitization</option>
+                                        <option value="Construction">Post-Construction Cleanup</option>
+                                        <option value="HospitalityStaff">Hospitality Housekeeping</option>
+                                        <option value="Specialist">Carpet & Window Care</option>
+                                        <option value="Other">Other Query</option>
+                                    </select>
+                                    <label for="form-service" class="select-label">Select Service Interested</label>
+                                    <i class="fa-solid fa-chevron-down select-arrow"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <textarea id="form-message" rows="5" required placeholder=" "></textarea>
+                                <label for="form-message">Detailed Requirements / Query</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-gold btn-full">Submit Inquiry <i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                        
+                        <!-- Success Toast/Feedback Modal -->
+                        <div id="form-success-message" class="success-overlay">
+                            <div class="success-box">
+                                <div class="success-icon-circle">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <h3>Thank You!</h3>
+                                <p>Your message has been received. Our luxury cleaning consultant will contact you shortly.</p>
+                                <button id="close-success-btn" class="btn btn-gold btn-sm">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Map Column -->
+                <div class="contact-map-container scroll-reveal">
+                    <div class="map-wrapper glass-card">
+                        <!-- Embedded Google Map centered in Doha Qatar (Al Sadd District) -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.2831526438696!2d51.49969197521871!3d25.286377777673516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c4a63816a7f1%3A0x673c714397793d5f!2sAl%20Sadd%2C%20Doha%2C%20Qatar!5e0!3m2!1sen!2sqa!4v1716277000000!5m2!1sen!2sqa" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Princess Lanka Doha Qatar Office Location map"
+                            id="gmap">
+                        </iframe>
+                    </div>
+                    
+                    <div class="direct-actions scroll-reveal">
+                        <a href="https://wa.me/97470681469" target="_blank" rel="noopener noreferrer" class="action-btn wa-action">
+                            <i class="fa-brands fa-whatsapp"></i> Chat On WhatsApp
+                        </a>
+                        <a href="mailto:princesslanka9@gmail.com" class="action-btn email-action">
+                            <i class="fa-regular fa-envelope"></i> Send Direct Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FOOTER SECTION -->
+    <footer class="footer-section">
+        <div class="container footer-grid">
+            <!-- Branding Column -->
+            <div class="footer-col branding-col">
+                <a href="#home" class="logo-link footer-logo">
+                    <img src="logo.jpg" alt="Princess Lanka Logo" class="logo-img">
+                    <span class="logo-title">PRINCESS LANKA</span>
+                </a>
+                <p class="footer-desc">Providing elite commercial office cleaning, premium residential housekeeping, deep sanitization, post-construction cleanup, and five-star hospitality staffing services across Doha, Qatar.</p>
+                <div class="footer-social-icons">
+                    <a href="https://wa.me/97470681469" target="_blank" rel="noopener noreferrer" aria-label="Chat with Princess Lanka on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:princesslanka9@gmail.com" aria-label="Email Princess Lanka"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="tel:+97470681469" aria-label="Call Princess Lanka"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h4 class="footer-title">Quick Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fa-solid fa-chevron-right footer-icon"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-chevron-right footer-icon"></i> About Us</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right footer-icon"></i> Services</a></li>
+                    <li><a href="#gallery"><i class="fa-solid fa-chevron-right footer-icon"></i> Gallery Portfolio</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-chevron-right footer-icon"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <!-- Services Links -->
+            <div class="footer-col">
+                <h4 class="footer-title">Our Key Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right footer-icon"></i> Commercial Cleaning</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right footer-icon"></i> Residential Housekeeping</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right footer-icon"></i> Deep Cleaning & Sanitization</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right footer-icon"></i> Post-Construction Cleanup</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right footer-icon"></i> Hospitality Housekeeping</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Details -->
+            <div class="footer-col">
+                <h4 class="footer-title">Contact Information</h4>
+                <ul class="footer-contact-info">
+                    <li>
+                        <i class="fa-solid fa-location-dot footer-icon-gold"></i>
+                        <span>Doha, State of Qatar</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone footer-icon-gold"></i>
+                        <a href="tel:+97470681469">+974 70681469</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp footer-icon-gold"></i>
+                        <a href="https://wa.me/97470681469" target="_blank" rel="noopener noreferrer">WhatsApp Support</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope footer-icon-gold"></i>
+                        <a href="mailto:princesslanka9@gmail.com">princesslanka9@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p class="copyright-text">&copy; 2026 Princess Lanka Cleaning & Hospitality Services. All Rights Reserved.</p>
+                <p class="credit-text">Crafted for Elite Excellence in Qatar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <div class="floating-buttons-container">
+        <!-- Email Floating Button -->
+        <a href="mailto:princesslanka9@gmail.com" class="floating-btn float-email" aria-label="Send Email">
+            <i class="fa-regular fa-envelope"></i>
+            <span class="float-tooltip">Email Us</span>
+        </a>
+        
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/97470681469" target="_blank" rel="noopener noreferrer" class="floating-btn float-whatsapp" aria-label="Open WhatsApp Chat">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="float-tooltip">WhatsApp Now</span>
+        </a>
+    </div>
+
+    <!-- Custom Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
